@@ -14,6 +14,7 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+//comentario para probar cambios en git
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
