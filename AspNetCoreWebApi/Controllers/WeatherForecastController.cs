@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Data.Common;
 
 namespace AspNetCoreWebApi.Controllers
 {
@@ -6,6 +7,8 @@ namespace AspNetCoreWebApi.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        private string DbConnectionString = "Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;";
+
         private static readonly string[] Summaries =
         [
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
